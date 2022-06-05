@@ -43,5 +43,28 @@ Fimalgoritmo
 
 __________________________________________________________________
 
+Algoritmo "semnome"
+
+Var
+altura: real
+largura: real
+
+
+Inicio
+
+escreval ("----Area Retangulo----")
+Escreval ("Digite a altura do retangulo:")
+leia (altura)
+Escreval ("Digite a largura do retangulo:")
+leia (largura)
+escreval("A area do retangulo é de:", (largura*altura))
+
+
+Fimalgoritmo
+
+
+________________________________________________________________________
+
+
 
 
