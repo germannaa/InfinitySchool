@@ -249,5 +249,101 @@ __________________________________________________________________
 
 
 
+Algoritmo "semnome"
+
+Var
+x, y : inteiro
+
+
+Inicio
+x := 10
+y := 20
+
+SE x > y então
+   escreval ( x, " é maior que y.")
+   SENAO
+        escreval (x, " é menor que y.")
+
+fimse
+
+
+
+Fimalgoritmo
+
+__________________________________________________________________________
+
+
+AAlgoritmo "semnome"
+
+Var
+indice : inteiro //contador
+notas: vetor [1..4] de real
+media : real
+
+
+Inicio
+
+para indice de 1 ate 4 faca
+     escreva ("Digite sua ", indice, "º nota:")
+     leia (notas[indice])
+     media:= media + notas[indice]
+
+fimpara
+
+media:= media/4
+
+limpatela
+
+para indice de 1 ate 4 faca
+     escreval ("Sua", indice, "º nota:", notas[indice])
+     
+fimpara
+
+Escreval ("Sua média foi de:", media)
+
+Se media >= 6 entao
+   escreval ("Aluno Aprovado!")
+   senao
+        escreval ("Aluno REPROVADO!")
+        
+fimse
+
+
+
+Fimalgoritmo
+
+___________________________________________________________________________________
+
+
+
+
+Algoritmo "semnome"
+
+Var
+indice : inteiro //contador
+x : inteiro
+
+
+
+Inicio
+
+escreval ("Digite um valor para exibir a tabuada:")
+leia (x)
+
+limpatela
+
+escreval ("-----TABUADA de", x, "-----")
+
+para indice de 1 ate 10 faca
+     escreval (x, " x ",indice, " = ", indice*x)
+
+fimpara
+
+
+
+Fimalgoritmo
+
+___________________________________________________________________________________________________
+
 
 
