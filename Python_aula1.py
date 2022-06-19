@@ -95,3 +95,108 @@ while True:
 print("-----*-----*" * 12)
 
    '''
+
+
+'''
+resposta = input("Vamos sair? \n")
+
+if (resposta == "sim") or (resposta == "SIM"):
+    print("Oba!")
+
+elif (resposta == "nao") or (resposta == "NAO") or (resposta == "nem"):
+    print("Sim, pq nao?")
+
+else:
+    print("Nem queria mesmo.")
+
+
+'''
+
+'''
+
+n = "germanna"
+
+print(n)
+
+print(n.upper())
+'''Deixar todas as letras maiusculas'''
+
+print(n.title())
+'''Primeira Letra maiuscula'''
+'''
+
+'''
+
+salario = float(input("Digite seu salario:\n"))
+
+if salario < 2000:
+    novosalario = salario*1.15
+    print(f'Salario = {salario} + aumento de 15% = Novo Salario {novosalario}')
+
+elif (salario >= 2000) and (salario<=4000):
+    novosalario = salario * 1.1
+    print(f'Salario = {salario} + aumento de 10% = Novo Salario {novosalario}')
+
+else:
+    novosalario = salario * 1.05
+    print(f'Salario = {salario} + aumento de 5% =Novo Salario {novosalario}')
+
+'''
+
+
+'''
+for indice in range (1,6):
+    print("Seja bem vindo.")
+
+print("Fim do programa")
+'''
+
+'''
+for i in range (0,10):
+    print(i)
+
+
+i=0
+while i<10:
+    print(i)
+    i+=1
+    
+    
+
+numero = 1
+
+while numero != 0:
+    print("-" *10)
+    print(f'Numero = {numero}')
+    numero = float(input("Digite um numero: Ou digite 0 pra sair \n"))
+print("Fim do programa. ")
+    
+    '''
+'''
+
+nota = 1
+
+while (nota > 0) and (nota <= 10):
+    print("-" *10)
+    print(f'nota = {nota}')
+    nota = float(input("Digite uma nota:  \n"))
+
+print("Nota Invalida! Entre com uma nota entre 0 e 10. ")
+
+'''
+
+'''
+
+print("---Confirmação de senha ---")
+senha = int(input("Digite a sua senha de login:"))
+confirmacaoSenha = int(input("Confirme sua senha de login:"))
+
+while senha != confirmacaoSenha:
+    confirmacaoSenha = int(input("\nSenha digitada diferente da primeira! \n   Confirme Sua senha: "))
+
+    if senha == confirmacaoSenha:
+         print("\n\nSenha Validada. \nSeja bem Vindo!!!")
+
+'''
+
+
