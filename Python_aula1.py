@@ -199,4 +199,20 @@ while senha != confirmacaoSenha:
 
 '''
 
+'''
+print("-"*30 + "\nConfirmação de senha\n" + "-"*30)
+senha = int(input("\nDigite a sua senha de login:"))
+confirmacaoSenha = int(input("Confirme sua senha de login:"))
+
+while senha != confirmacaoSenha:
+    senha = int(input("\nSenha digitada diferente da primeira! \nDigite a sua senha de login:"))
+    confirmacaoSenha = int(input("Confirme Sua senha: "))
+
+    if senha == confirmacaoSenha:
+         print("\n\nSenha Validada. \nSeja bem Vindo!!!")
+'''
+
+
+
+
 
