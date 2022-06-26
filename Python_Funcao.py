@@ -138,5 +138,75 @@ andar = int(input("Digite a quantidade de andares:"))
 piramide(andar)
 '''
 
+'''
+import math
+import random
+
+def sorteio(numMin, numMax):
+    resultSort = random.randint(numMin,numMax)
+    return resultSort
+
+print(" -"*10,"\nSistema de Loterias\n","- "*10)
+'''resultSort = random.random()
+#Percorre do zero ao 1
+print(resultSort)
+'''
+numMin = int(input("Digite o valor minimo:"))
+numMax = int(input("Digite o valor maximo:"))
+
+resultadoSorteio = sorteio(numMin,numMax)
+print(f'Resultado do sorteio foi: {resultadoSorteio}')
+'''
+
+'''
+
+import math
+import random
+
+print(" -"*10,"\nSistema de Loterias\n","- "*10)
+'''resultSort = random.random()
+#Percorre do zero ao 1
+print(resultSort)
+'''
+numMin = int(input("Digite o valor minimo:"))
+numMax = int(input("Digite o valor maximo:"))
+
+resultadoSorteio =  random.randint(numMin,numMax)
+print(f'Resultado do sorteio foi: {resultadoSorteio}')'''
+
+'''
+import math
+
+print(" -"*10,"\nCalculo de Raiz quadrada\n","- "*10)
+
+num = int(input("Digite o valor que deseja saber a raiz quadrada:"))
+
+raizQuad = math.sqrt(num)
+
+print(f'Raiz Quadrada de {num} = {raizQuad:.2f}')
+
+print("Raiz quadrada de {} = {:.2f}" .format(num,raizQuad))
+
+'''
+
+
+
+_____________________________________________________________________________________________________________
+
  #NO TERMINAL:  pip install PySimpleGUI
+    
+#Importar TUDO da biblioteca:
+#(import + biblioteca)
+import math
+
+#Importar ALGUMAS funções da biblioteca, somente o MÓDULO da biblioteca:
+#from + biblioteca + import + modulo
+from math import cell
+#(arredonda pra cima)
+from math import floor 
+#(arredonda pra baixo)
+from math import trunc 
+#(ELIMINA da virgula p frente(casas decimais), NAO É ARREDONDAR!!!!!!)
+from math import factorial
+#(calculo de fatorial)1
 
