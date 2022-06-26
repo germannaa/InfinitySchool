@@ -91,4 +91,52 @@ else:
 
 '''
 
+'''
+
+def soma(a=0,b=0, c=0, d=0):
+    s = a+b+c+d
+    return print(s)
+
+#Não precisa inicializar todos os parametros, já inicializa na função para evitar erros, caso "esqueca" de inicializar no codigo
+
+soma()
+soma(1)
+soma(1,2)
+soma(1,2,3)
+soma(1,2,3,4)
+
+a = int(input("a=?"))
+soma(a)
+'''
+
+'''
+
+def somaSemRetorno(a=0,b=0,c=0):
+    s = a+b+c
+    print('Essa é sua soma com mensagem fixa: {}'.format(s))
+
+def somacomRetorno(a=0,b=0,c=0):
+    s = a+b+c
+    return s
+
+somaSemRetorno()
+print("Função usando return com mensagens variaveis")
+resultado = somacomRetorno(2,5,6)
+print(f"Essa é sua conta: {resultado}")
+print(f'Sua conta é igual a {resultado}')
+
+'''
+
+
+'''
+
+def piramide(andar=0):
+    for i in range(1,andar+1):
+        print(f'{i}'*i)
+
+andar = int(input("Digite a quantidade de andares:"))
+piramide(andar)
+'''
+
+ #NO TERMINAL:  pip install PySimpleGUI
 
