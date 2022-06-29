@@ -221,7 +221,32 @@ print(f'O ano {ano} pertence ao século {seculo(ano)}')
 _____________________________________________________________________________________________________________
 
 
+'''
 
+asteroide = {}
+distancias = []
+media = 0
+#Confirmar se criou o dicionário
+# print(type(asteroide))
+
+nome = input("Digite o nome do Asteroide:")
+asteroide[nome] = distancias
+
+for i in range(0,5):
+    distancia = int(input(f'Digite a {i+1} distancia da Terra:'))
+    media = media + distancia
+    distancias.append(distancia)
+
+#Pra confirmar, imprimindo o dicionario:
+# print(asteroide)
+
+for chave in asteroide.keys():
+    print(f'Asteroide:{chave} e a média das Distancias:{media/5}')
+
+
+'''
+
+___________________________________________________________________________________________________________
 
 
 
