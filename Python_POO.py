@@ -44,3 +44,90 @@ meuCarro2 = Carro("Cinza", "Gol", "VW")
 print(meuCarro2.cor, meuCarro2.marca, meuCarro2.modelo)
 print(meuCarro2.cor)
 meuCarro2.passar_marcha("2")
+
+
+
+
+_____________________________________________________________________________________________________________________
+
+
+
+class Cachorro:
+    #Atributos
+    def __init__(self, nome, raca, sexo, idade, latido):
+        self.nome = nome
+        self.raca = raca
+        self.sexo = sexo
+        self.idade = idade
+        self.latido = latido
+
+    #Métodos
+    def andar(self, andando):
+        if andando == "sim":
+            print("Oba! O nenem tá bem! :)")
+
+        else:
+            print("Ah não! Leve ele no médico AGOORA!")
+
+    def respirar(self, respirando):
+        if respirando == "sim":
+            print("Oba! O doguinho está vivo")
+
+        else:
+            print("Ah não! Meus pêsames!!")
+
+    def som(self, latido):
+        lista_latidos = ["AuAu", "au", "Au", "auau", "latido", "rosnar", "grunhir", "au au"]
+        if latido in lista_latidos:
+            print("Você comprou um cachorrinho! Muito bem...")
+        else:
+            print("Sinto muito, mas isso ai eh tudo, menos um cachorro...")
+
+
+
+#INICIO
+
+print("Oie! Vamos falar sobre seu doguinho!!")
+
+nome = input("Qual nome dele?")
+raca = input("Qual a raça do seu animal?")
+sexo = input("Qual sexo do seu animal?")
+cor = input("Qual a cor dele??")
+latido = input("Que som ele faz??")
+
+
+Animal1 = Cachorro(nome,raca, sexo, cor, latido)
+
+Animal1.som(latido)
+
+print(f' \n{Animal1.nome}, é um {Animal1.raca}, {Animal1.sexo}, de {Animal1.idade}.')
+
+andando = input("Seu doguinho está andando?")
+Animal1.andar(andando)
+
+respirando = input("Seu doguinho está respirando????")
+Animal1.respirar(respirando)
+
+print("-*" *15)
+
+
+print("Oie! Vamos falar sobre seu outro doguinho!!")
+
+nome = input("Qual nome dele?")
+raca = input("Qual a raça do seu animal?")
+sexo = input("Qual sexo do seu animal?")
+cor = input("Qual a cor dele??")
+latido = input("Que som ele faz??")
+
+Animal2 = Cachorro(nome,raca, sexo, cor, latido)
+
+Animal2.som(latido)
+
+print(f' {Animal2.nome}, é um {Animal2.raca}, {Animal2.sexo}, de {Animal2.idade}.')
+
+andando = input("Seu doguinho está andando?")
+Animal2.andar(andando)
+
+respirando = input("Seu doguinho está respirando????")
+Animal2.respirar(respirando)
+
