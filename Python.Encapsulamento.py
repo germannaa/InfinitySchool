@@ -18,11 +18,20 @@ class Funcionarios:
         return self.__salario
 
     @salario.setter
-    def setSalario(selfself, novoSalario):
+    def salario(selfself, novoSalario):
         raise ValueError("Você precisa usar a função calcularSalario()")
 
 
     def registrarHoraTrabalhada(self):
         self.__horasTrabalhadas +=1
-        
+
+
+usuario1 = Funcionarios('Jose', 'professor', 50)
+#Tentando adicionar diretamente, mas deu o erro filtrado
+#usuario1.salario = 100000
+
+valor_hora = float(input("Valor da hora"))
+qtd_hora = float(input("qtde hora"))
+usuario1.calcularSalario(valor_hora, qtd_hora)
+print(f' Valor do seu salario:{usuario1.salario}')
     
