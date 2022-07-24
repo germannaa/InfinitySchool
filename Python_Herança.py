@@ -88,3 +88,65 @@ class Estagiario(Funcionario):
         else:
             print(f"Carga de horario de estágio insuficiente para a contratação. {self.nome}, volte e venda a sua alma mais algumas horas...")
 
+            
+            ___________________________________________________________________________________________________________________________
+            
+            #Super Classe
+class Funcionario:
+    def __init__(self, nome, cpf, salario):
+        self.nome = nome
+        self.cpf = cpf
+        self.salario = salario
+
+#SubClasse
+class Gerente(Funcionario):
+    def __init__(self, nome, cpf, salario, senha, qtdGerenciados, setor, comissao):
+        super().__init__(nome, cpf, salario)
+        self.senha = senha
+        self.qtdGerenciados = qtdGerenciados
+        self.setor = setor
+        self.comissao = comissao
+
+    def contratar(self, ):
+        if self.qtdGerenciados >=10:
+            print("Já possuimos funcionarios o suficiente, NAO CONTRATAR!")
+        else:
+            print(f'Temos {self.qtdGerenciados} funcionarios, pode contratar!!!')
+
+    def demitir(self, nota_avaliacao):
+        if nota_avaliacao < 5:
+            print(f' O colaborador{self.nome} deverá ser desligado')
+
+
+class Estagiario(Funcionario):
+    def __init__(self, nome, cpf, salario, horasEstagiadas):
+        super().__init__(nome, cpf, salario)
+        self.horasEstagiadas = horasEstagiadas
+
+    def admissao(self):
+        horasEstagiadas = int(input("Qual a quantidade de horas Estagiadas?"))
+        if horasEstagiadas>=300:
+            print(f'Estagiario {self.nome} Contratado!')
+        else:
+            print(f"Carga de horario de estágio insuficiente para a contratação. \n{self.nome}, volte e venda a sua alma mais algumas horas...")
+
+
+user = int(input("Qual sua função? \n1-gerente 2-Estagiario\n"))
+
+if user == 1:
+    gerente = Gerente('João', "00000", "12000", "admin", 9, "T.I.", "10%")
+    gerente.contratar()
+
+if user == 2:
+    estagiario1 = Estagiario("Joana", 0000, 12000, 230)
+    estagiario1.admissao()
+
+
+
+
+____________________________________________________________________________________________
+
+
+            
+            
+            
