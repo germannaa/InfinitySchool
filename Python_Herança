@@ -48,3 +48,43 @@ visitante1.visitar()
 
 ____________________________________________________________________________________________________
 
+
+
+#Super Classe
+class Funcionario:
+    def __init__(self, nome, cpf, salario):
+        self.nome = nome
+        self.cpf = cpf
+        self.salario = salario
+
+#SubClasse
+class Gerente(Funcionario):
+    def __init__(self, nome, cpf, salario, senha, qtdGerenciados, setor, comissao):
+        super().__init__(nome, cpf, salario)
+        self.senha = senha
+        self.qtdGerenciados = qtdGerenciados
+        self.setor = setor
+        self.comissao = comissao
+
+    def contratar(self, funcionarios):
+        if funcionarios >=10:
+            print("Já possuimos funcionarios o suficiente, NAO CONTRATAR!")
+        else:
+            print(f'Temos {funcionarios} funcionarios, pode contratar!!!')
+            
+    def demitir(self, nota_avaliacao):
+        if nota_avaliacao < 5:
+            print(f' O colaborador{self.nome} deverá ser desligado')
+        
+
+class Estagiario(Funcionario):
+    def __init__(self, nome, cpf, salario, horasEstagiadas):
+        super().__init__(nome, cpf, salario)
+        self.horasEstagiadas =horasEstagiadas
+
+    def admissao(self, horasEstagiadas):
+        if horasEstagiadas>=300:
+            print(f'Estagiario {self.nome} Contratado!')
+        else:
+            print(f"Carga de horario de estágio insuficiente para a contratação. {self.nome}, volte e venda a sua alma mais algumas horas...")
+
