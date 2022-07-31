@@ -1,0 +1,145 @@
+BD = Armazenamento de informações, dados, arquivos
+
+
+Excell - Banco de dados sem gerenciamento
+Finita, limitada a linhas, colunas e tabelas
+(Até 1 milhao de linhas)
+
+Acess-> Sistema de gerenciamento de banco de dados
+
+
+Sistema de gerenciamento de banco de dados =>
+BD + Sistema de Gerenciamento + Linguagem SQL
+
+BD:
+-Entidades (posteriormente, vira tabela. Ex: Paciente, médico)
+-Atributos (Caracteristicas das entidades ou do relacionamento) (Dentro dos atributos eu coloco os registros)
+-Relacionamentos (Ex: Consulta)
+
+Cardinalidade:
+Varia de 0 a n
+
+Ex: Consulta= no minimo 1 paciente e 1 medico. Mas podem ter vários pacientes e medicos
+    Aula online: minimo nenhum aluno presencial.
+
+
+
+
+
+-Xampp (bd) 
+zemp(?)*
+*BrModeloWeb
+**MariaDB
+
+
+Painel Rede
+classe 		ip 			mascara ip
+a		1 ate 126		255.0.0.0
+b		128 ate 191		255.255.0.0	
+c		192 ate 223		255.255.255.0
+
+
+ex: Aterar senha roteador= Ip:192.168.0.1 - máscara classe C
+
+Qtde equipamentos:
+Classe a = 2^24 = 16777216 HOST
+Classe b= 2^16 = 65536 HOST
+Classe c = 2^8 = 256 HOST
+
+***127 => IP DE TESTE = LocalHost (Endereço da placa de rede)
+127.0.0.1 - servidor local
+
+___________________________
+APACHE
+Usa duasp portas:
+
+http (porta 80) (protocolo de transferencia de hipertexto)
+https (porta 443) - c protocolo de proteçao/segurança ssl (protocolo de transferencia de hipertexto + segurança) - Chave assimetrica
+download/upload:  ftp (porta 20 e 21)
+Pilha de protocolo = tpc/ip
+
+MySQL
+Porta 3306, 3307 ou 3308
+
+(Caso dê erro:)
+Configurações - my.ini
+abre arquivo tipo bloco de notas
+ctrl+F:busca a porta
+e altera em TODOS os campos que achou
+
+
+
+
+>> Linguagem de manipulação de dados
+DDL - Comandos que criam, alteram ou removem objetos 
+Create, Alter, DROP
+
+DCL = Comandos que ajudam na segurança de dados
+Grant, Revoke
+
+DML = Comandos responsaveis pela manipulação dos dados
+CRUD (Select, Delete, Update, Insert)
+
+_____________________________
+Pra criação do banco de dados
+D.I.C.A
+Durabilidade
+(Tabelas e base de dados com anta durabilidade)
+Isolamento
+(Isolamento dos dados, paar conseguir relacionar)
+Consistência
+(varchar - string) (Dados consistentes)
+Atomicidade
+(Ou tudo ou nada!) (Ou tudoo funciona certo, ou nada. Precisa de consistência)
+
+_______________________________
+
+DDL:
+Create : Cria objetos
+Drop : Exclui objetos do banco de dados
+Alter : Alterna dados existenter
+Truncate : Exclui e redefine tabela
+
+
+DML:
+Select: Recupera dados de um determinado local
+Insert: Insere dados em uma ou mais tabelas
+Update: Atualiza dados emuma ou mais tabelas
+Delete: Exclui os registros de uma tabela ou mais (pode remover a linha toda)
+
+
+
+
+
+
+
+
+
+CREATE bdaula1
+
+USE bdaula1
+
+CREATE TABLE paciente
+(
+	id_paciente INT PRIMARY KEY,
+    nome_paciente VARCHAR (30),
+    cpf_paciente INT 
+);
+
+CREATE TABLE medico
+(
+	id_medico INT PRIMARY KEY,
+    nome_medico VARCHAR (30),
+    crm INT 
+);
+
+INSERT INTO paciente (id_paciente, nome_paciente, cpf_paciente) VALUES (1, 'José Maria', 00000000000)
+
+INSERT INTO medico (id_medico, nome_medico, crm) VALUES (1, 'Derek Shepperd', 11111111);
+
+SELECT * FROM paciente
+
+SELECT nome_paciente FROM paciente
+
+SELECT crm FROM medico
+
