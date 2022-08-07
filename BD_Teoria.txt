@@ -111,9 +111,15 @@ Delete: Exclui os registros de uma tabela ou mais (pode remover a linha toda)
 ______________________________________________________________________________________________________________________
 
 
-CRUD
+C R U D
 Consultas que vc faz utilizando o SQL
 Criar, Inserir, Atualizar e Deletar
+
+--------------------------------------
+Create = INSERT (Criar a linha)
+
+
+
 
 --------------------------------------
 
