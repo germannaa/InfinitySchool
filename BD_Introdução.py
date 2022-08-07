@@ -27,7 +27,7 @@ cursor = conexao.cursor(
 #Colocar aqui o CRUD
 
 
-
+ 
 #Lembrar de fechar TUDOOO o que vc abrir
 
 cursor.close()
