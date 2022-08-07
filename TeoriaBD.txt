@@ -108,11 +108,71 @@ Update: Atualiza dados emuma ou mais tabelas
 Delete: Exclui os registros de uma tabela ou mais (pode remover a linha toda)
 
 
+______________________________________________________________________________________________________________________
+
+
+CRUD
+Consultas que vc faz utilizando o SQL
+Criar, Inserir, Atualizar e Deletar
+
+--------------------------------------
+
+**Download Workbench
+
+***Estudar Firebase
+
+>>>
+Tipificação de dados
+decimal
+float
+char (1 caractere) - pode restringir a qtde de caractere (vai de 1 ate 255)
+booleano
+varchar (Usando mascara, dificulta nivel de senha por exemplo) ate 65535 caracteres 2^16
+longtext - armazena ate 4294967295 caracteres 
+date yyy-mm-dd
+datetime yyy-mm-dd hh:mm:ss (Usa em sistemas de login de empresas, hora trabalhada)
+time hh:mm:ss (Usa em sistemas de provas, tempo expirado e tem que logar dnvo)
+bigint (negativos)
+smallint
+tinyint
+pk = primary key
+fk = chave estrangeira
+default 'value' = valor padrão
+
+------------------------------------
+
+>>Restrições
+
+TODA TABELA TEM UMA CHAVE PRIMARIA (PK)
+
+chave primaria = pk = 
+	- endereço unico na tabela [ nao se repete]
+	- autoincremento
+	- nao nulo [NOTNULL]
+
+
+TODA CHAVE ESTRANGEIRA É UMA CHAVE PRIMÁRIA DE OUTRA TABELA
+
+chave estrangeira = FK = mesmas especificações da PK
+
+>>> Modelo de entidade relacional
+relacionamento entre as chaves primarias e estrangeiras
+
+
+NotNull
 
 
 
 
+ALTER TABLE nome-tabela
+ADD COLUMN campo TIPO CONSTANT
 
+DROP TABLElA nome-tabela
+DROP DATABASE nome-banco
+
+
+
+_______________________________________________________________________________________________________________________
 
 
 CREATE bdaula1
@@ -142,4 +202,26 @@ SELECT * FROM paciente
 SELECT nome_paciente FROM paciente
 
 SELECT crm FROM medico
+
+
+____________________________________________
+
+CREATE DATABASE produto
+
+--------
+
+CREATE TABLE `produto`.`informatica` (
+  `idinformatica` INT NOT NULL AUTO_INCREMENT,
+  `nomeProduto` VARCHAR(45) NOT NULL,
+  `precoProduto` FLOAT NOT NULL,
+  PRIMARY KEY (`idinformatica`),
+  UNIQUE INDEX `idinformatica_UNIQUE` (`idinformatica` ASC) VISIBLE);
+
+
+----------
+
+
+
+________________________________________________
+
 
