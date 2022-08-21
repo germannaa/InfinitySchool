@@ -95,14 +95,78 @@ use  escola113;
 update aluno set telefone = 85256987412 WHERE id_aluno = 1;
 update aluno set telefone = 85200000012 WHERE nome = 'Pedro Ernesto';
 
----------------------------------
+____________________________________________________
 #Incrementar valores em uma coluna na tabela inteira
 
 use  escola113;
 
 update professor set salario_professor = salario_professor + 200 ;
 
--------------------------------------
+___________________________________________________
+#Deletar linha da tabela
+>>>>> CUIDADO COM ESSES COMANDOS!!!!! SEMPRE USE O WHERE <<<<<
+
+use  escola113;
+
+delete from aluno where id_aluno = 10;
+
+_____________________________________________________
+#Pesquisas direcionadas
+
+use  escola113;
+
+SELECT nome FROM aluno where idade <= 29;
+
+---------------------------
+use  escola113;
+
+SELECT nome FROM aluno where idade <= 29 and cidade = 'fortaleza';
+
+----------------------------
+use  escola113;
+
+SELECT nome, telefone FROM aluno where  nome like 'A%';
+
+>>SELECT nome, telefone FROM aluno where  nome like '(INPUT)%'; <<
+>>> SELECT nome, telefone FROM aluno where  nome like '%a'; <<< YTodo mundo q termina com a
+
+----------------------------
+#Apelido pra colsulta, e gera uma tabela temporaria de consulta
+
+use  escola113;
+
+select nome_professor, salario_professor - (salario_professor * 0.1) as salario_liquido from professor;
+
+-----------------------------
+
+use  escola113;
+
+select nome_professor, salario_professor + (salario_professor * 0.1) as salario_bonus from professor;
+
+
+--------------------------------
+
+use  escola113;
+
+
+select nome_professor, salario_professor, salario_professor + (salario_professor * 0.1) as salario_liquido from professor;
+
+
+---------------------------------
+
+use  escola113;
+
+select nome_professor, salario_professor + (salario_professor * 0.5) as salario_bonus from professor where id_professor = 2;
+
+
+---------------------------------
+#Contar quantidade de itens da tabela
+
+use  escola113;
+
+
+select count(*) as total_professores from professor
+
 
 
 
