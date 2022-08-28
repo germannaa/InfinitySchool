@@ -43,7 +43,7 @@ class janelaDois(QMainWindow):
         super().__init__()
         #Pode passar os atributos direto no método
         #self.topo2 = 200
-        #self.esquerda2 = 700
+        #self.esquerda2 = 300
         #self.largura2 = 600
         #self.altura2 = 800
         #self.titulo2 = 'Segunda Janela
@@ -53,7 +53,7 @@ class janelaDois(QMainWindow):
     def carregarJanela2(self):
         #self.setGeometry(self.esquerda2, self.topo2, self.largura2, self.altura2)
         #Carregar os atributos da janela direto
-        self.setGeometry(700,200,600,800)
+        self.setGeometry(300,200,600,800)
         #self.setWindowTitle(self.titulo2)
         self.setWindowTitle('Segunda Janelaa')
         self.show()
@@ -62,15 +62,12 @@ class janelaDois(QMainWindow):
 
 #Criar o objeto, executando todos os elementos da GUI
 aplicacao = QApplication(sys.argv)
+aplicacao2 = QApplication(sys.argv)
 
 #Instanciar o objeto
 appUm = JanelaUm()
-#Fechar o objeto
-
-
-aplicacao2 = QApplication(sys.argv)
 appDois = janelaDois()
 
-
+#Fechar o objeto
 sys.exit(aplicacao.exec_())
 sys.exit(aplicacao2.exec_())
