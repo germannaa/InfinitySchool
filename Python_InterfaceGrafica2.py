@@ -85,7 +85,7 @@ class janelaDois(QMainWindow):
         botaoDois.setStyleSheet('QPushButton{background-color:#d9764d; font:bold; font-size:10px}')
         botaoDois.clicked.connect(self.cliqueBotaoDois)
 
-        self.carregarJanela2()
+        self.carregarJanela2() 
 
     def carregarJanela2(self):
         #self.setGeometry(self.esquerda2, self.topo2, self.largura2, self.altura2)
