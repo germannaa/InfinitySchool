@@ -67,6 +67,9 @@ abre arquivo tipo bloco de notas
 ctrl+F:busca a porta
 e altera em TODOS os campos que achou
 
+>> MySQL - arquitetura cliente servidor
+Workbench (lado cliente) faz a conexao com servidor MySQL
+Porta: Padrao SQL 3306
 
 
 
