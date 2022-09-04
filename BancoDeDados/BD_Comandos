@@ -1,0 +1,177 @@
+#Criar Banco de dados
+create database escola113
+
+_________________________________________________
+#Usar o banco de dados
+use escola113;
+
+__________________________________________________
+#Criando tabela
+
+use  escola113;
+
+create table aluno(
+id_aluno int primary key not null unique auto_increment,
+nome varchar(40) not null,
+telefone numeric(11) not null,
+cpf numeric (11) not null unique,
+idade int
+)
+-----------------------------------------------
+use  escola113;
+
+create table professor(
+id_professor int primary key not null unique auto_increment,
+nome_professor varchar(40) not null,
+telefone_professor numeric(11) not null,
+cpf_professor numeric (11) not null unique,
+idade_professor int,
+salario_professor float,
+disciplina_lecionada varchar(20)
+);
+--------------------------------------------------
+use  escola113;
+
+create table disciplina(
+id_disciplina int primary key not null unique auto_increment,
+nome_disciplina varchar(40) not null
+);
+
+--------------------------------------------------
+#Referenciando as chaves estrangeiras e primarias
+
+use  escola113;
+
+create table turma(
+id_turma int primary key not null unique auto_increment,
+fk_aluno int,
+fk_professor int,
+fk_disciplina int,
+
+foreign key(fk_aluno) references aluno(id_aluno),
+foreign key (fk_professor) references professor(id_professor),
+foreign key (fk_disciplina) references disciplina(id_disciplina)
+
+);
+____________________________________________________
+#Inserir uma coluna na tabela ja feita
+
+use  escola113;
+
+alter table aluno add column calada int;
+
+____________________________________________________
+#Editar coluna da tabela
+#Incluir fk numa coluna ja criada
+
+use escola113;
+
+alter table turma add  foreign key (fk_professor) references professor (id_professor)
+
+___________________________________________________
+#Excluir uma coluna da tabela
+
+use  escola113;
+
+alter table aluno drop column calada, drop column nenhuma;
+
+____________________________________________________
+#Popular o banco e dados
+insert into professor (nome_professor, telefone_professor, cpf_professor, idade_professor, salario_professor, disciplina_lecionada) 
+values ('Ivo', 11111169310, 01111111111, 35, 3500, Python);
+
+______________________________________________________
+#Consulta banco
+
+use  escola113;
+
+select * from aluno
+
+_____________________________________________________
+#atualizar
+
+use  escola113;
+
+update aluno set telefone = 85256987412 WHERE id_aluno = 1;
+update aluno set telefone = 85200000012 WHERE nome = 'Pedro Ernesto';
+
+____________________________________________________
+#Incrementar valores em uma coluna na tabela inteira
+
+use  escola113;
+
+update professor set salario_professor = salario_professor + 200 ;
+
+___________________________________________________
+#Deletar linha da tabela
+>>>>> CUIDADO COM ESSES COMANDOS!!!!! SEMPRE USE O WHERE <<<<<
+
+use  escola113;
+
+delete from aluno where id_aluno = 10;
+
+_____________________________________________________
+#Pesquisas direcionadas
+
+use  escola113;
+
+SELECT nome FROM aluno where idade <= 29;
+
+---------------------------
+use  escola113;
+
+SELECT nome FROM aluno where idade <= 29 and cidade = 'fortaleza';
+
+----------------------------
+use  escola113;
+
+SELECT nome, telefone FROM aluno where  nome like 'A%';
+
+>>SELECT nome, telefone FROM aluno where  nome like '(INPUT)%'; <<
+>>> SELECT nome, telefone FROM aluno where  nome like '%a'; <<< YTodo mundo q termina com a
+
+----------------------------
+#Apelido pra colsulta, e gera uma tabela temporaria de consulta
+
+use  escola113;
+
+select nome_professor, salario_professor - (salario_professor * 0.1) as salario_liquido from professor;
+
+-----------------------------
+
+use  escola113;
+
+select nome_professor, salario_professor + (salario_professor * 0.1) as salario_bonus from professor;
+
+
+--------------------------------
+
+use  escola113;
+
+
+select nome_professor, salario_professor, salario_professor + (salario_professor * 0.1) as salario_liquido from professor;
+
+
+---------------------------------
+
+use  escola113;
+
+select nome_professor, salario_professor + (salario_professor * 0.5) as salario_bonus from professor where id_professor = 2;
+
+
+---------------------------------
+#Contar quantidade de itens da tabela
+
+use  escola113;
+
+
+select count(*) as total_professores from professor
+
+
+
+
+
+
+
+
+
