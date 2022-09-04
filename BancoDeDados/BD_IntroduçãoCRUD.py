@@ -66,6 +66,10 @@ resultadoConsulta3 = cursor.fetchall()
 print(resultadoConsulta3)
 
 
+'''comandoSQL = f'SELECT count(*) informatica  WHERE nomeProduto = "{Produto}" and precoProduto = "{PrecoProduto}'
+#Retorna a quantidade de linhas que tem esses parametros acima.
+'''
+
 
 
 # U - UPDATE -> Atualização
