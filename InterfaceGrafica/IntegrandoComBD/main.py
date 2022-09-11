@@ -25,6 +25,10 @@ txt_login = QLineEdit()
 
 lbl_senha = QLabel('Senha')
 txt_senha = QLineEdit()
+txt_senha.setEchoMode(QLineEdit.Password)
+#Ctrl espaco
+#Alt enter
+
 
 botao = QPushButton('Entrar')
 
