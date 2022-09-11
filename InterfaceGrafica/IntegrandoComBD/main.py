@@ -1,11 +1,10 @@
 
-
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QApplication, QLabel, QPushButton, QWidget, QVBoxLayout, QMainWindow, QLineEdit
 
 #""Constante""
-TAMANHO_FONTE = 25
+TAMANHO_FONTE = 20
 
 
 layout = QVBoxLayout()
@@ -21,26 +20,19 @@ label.setFont(font)
 label.setAlignment(Qt.AlignCenter)
 
 
-label2 = QLabel('Login')
-label2.setFont(font)
-label2.setAlignment(Qt.AlignCenter)
-
+lbl_login = QLabel('Login')
 txt_login = QLineEdit()
 
-label3 = QLabel('Senha')
-label2.setFont(font)
-label2.setAlignment(Qt.AlignCenter)
-
+lbl_senha = QLabel('Senha')
 txt_senha = QLineEdit()
 
-botao = QPushButton('Botão')
-botao.setFont(font)
+botao = QPushButton('Entrar')
 
 
 layout.addWidget(label)
-layout.addWidget(label2)
+layout.addWidget(lbl_login)
 layout.addWidget(txt_login)
-layout.addWidget(label3)
+layout.addWidget(lbl_senha)
 layout.addWidget(txt_senha)
 layout.addWidget(botao)
 
