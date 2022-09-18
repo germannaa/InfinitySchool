@@ -4,3 +4,16 @@ Sistema de 3 camadas
 Model - codigos (back)
 View - Visualizacao  (front)
 Controller - Rotas, integração
+
+
+_______________________________________
+
+use funcionario;
+
+create table usuario (
+id_usuario int primary key not null unique auto_increment,
+nome varchar(30),
+senha varchar(14)
+)
+
+______________________________________
