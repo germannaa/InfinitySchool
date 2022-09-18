@@ -30,7 +30,26 @@ def cadastro():
     banco.commit()
 
 def telaDoiss():
+    #Exibir a tela dois
     segundaTela.show()
+
+    #Comando sql para exibir os dados do banco - READ
+    cursor = banco.cursor()
+    comandoSQL = "SELECT * FROM usuario"
+    cursor.execute(comandoSQL)
+
+    dadosExibir = cursor.fetchall()
+    print(dadosExibir)
+
+    #Exibir na segunda tela (Tabela)
+    #Criando a tabela com o numero de linhas e colunas necessarias
+    segundaTela.tableWidget.setRowCount(len(dadosExibir))
+    segundaTela.tableWidget.setCollumnCount(3)
+
+    #Criar estrutura de repeticao para exibicao dos dados
+    for x in range(0, len(dadosExibir)):
+        for y in range(0, 3):
+            segundaTela.tableWidget.setItem(x,y, QtWidgets.QTableWidgetItem(str(dadosExibir[x][y])))
 
 
 #------- INICIO ------- ("FRONT")
@@ -50,3 +69,4 @@ formulario.pushButton_2.clicked.connect(telaDoiss)
 #Exibir tela
 formulario.show()
 app.exec()
+
