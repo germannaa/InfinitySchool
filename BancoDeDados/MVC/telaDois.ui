@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>245</width>
-    <height>394</height>
+    <width>444</width>
+    <height>387</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>160</x>
       <y>30</y>
       <width>121</width>
       <height>21</height>
@@ -35,13 +35,23 @@
      <string>TELA DOIS</string>
     </property>
    </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>401</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>245</width>
+     <width>444</width>
      <height>21</height>
     </rect>
    </property>
