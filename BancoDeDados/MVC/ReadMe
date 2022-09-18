@@ -17,3 +17,12 @@ senha varchar(14)
 )
 
 ______________________________________
+
+
+#CRIAR UM USUARIO COM TODOS  = ROOT
+create user 'user'@'localhost' identified by 'password';
+grant all privileges on *.* to 'user'@'localhost';
+
+
+________________________________________
+
