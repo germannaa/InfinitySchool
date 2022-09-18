@@ -1,0 +1,6 @@
+> MVC - model view controller (Controle de visualizacao)
+Sistema de 3 camadas
+
+Model - codigos (back)
+View - Visualizacao  (front)
+Controller - Rotas, integração
