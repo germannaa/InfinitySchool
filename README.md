@@ -7,3 +7,7 @@
 
 > Linguagem utilizada: Python
 
+
+
+
+https://imasters.com.br/desenvolvimento/typescript-configurando-o-vs-code-para-escrever-rodar-e-debugar
