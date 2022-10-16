@@ -1,1 +1,43 @@
 https://colab.research.google.com/drive/1GsIIiHSWhLqK98a8f1t-5D5xWVyHpgDv?usp=sharing
+
+
+
+
+https://dontpad.com/turma113DS03
+
+
+
+___________________________________
+
+
+
+A biblioteca __Pandas__ possui muitas funções e métodos implementados que nos ajudam, e muito, em nosso dia-a-dia na análise exploratória de dados. 
+
+Nesta aula, vamos aprender a utilizar os mais comuns conforme estão listados abaixo:
+
+* `rename` : renomeia os 'rótulos' dos eixos (índices ou colunas)
+
+* `apply` : aplica uma determinada função ao longo de um eixo quando for chamado diretamente pelo _DataFrame_ ou aplica uma função numa _Series_ em questão
+
+* `map` : "mapeia" uma _Series_ aplicando determinada função a cada elemento desta
+
+* `agg` : agrega uma ou mais operações à uma _Series_
+
+* `min` : retorna o valor mínimo de uma _Series_
+
+* `max` : retorna o valor máximo de uma _Series_
+
+* `sum` : retorna a soma dos valores de uma _Series_
+
+* `mean` : retorna a média dos valores de uma _Series_
+
+* `count` : conta as células não vazias de cada linha ou coluna
+
+* `value_counts` : retorna uma _Series_ contendo a contagem de linhas exclusivas no _DataFrame_
+
+* `sort_values` : classifica / ordena os valores ao longo de qualquer eixo
+
+* `insert` : insire uma nova coluna no _DataFrame_ no local especificado
+
+* `drop` : remova linhas ou colunas especificando diretamente seus nomes
+
