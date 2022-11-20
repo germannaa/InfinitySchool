@@ -84,7 +84,8 @@ for contador_linha in resposta:
     print(contador_linha)
 
 
-
+#################################
+A partir daqui, ir para os testes
 
 
 
