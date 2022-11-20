@@ -36,5 +36,12 @@ class Loja113(BaseDeDados):
 #________________________Inicio________________________
 #SQL
 
+
+#Select *
 consultaSQL = Sessao.query(Loja113).all()
 print(consultaSQL)
+
+#Insert (Sem filtro)
+banco_insert = Loja113(nome_usuario = "Pedro Ernesto", endereco_usuario = "Avenida Sá", idade_usuario = 31)
+Sessao.add(banco_insert)
+Sessao.commit()
