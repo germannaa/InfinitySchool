@@ -1,8 +1,9 @@
 -------------------------------------------------
 https://dontpad.com/turma113Aula08
 -------------------------------------------------
+* Link do SqlAlchemy
 *
-*
+https://docs.sqlalchemy.org/en/20/core/engines.html
 -------------------------------------------------
 Parte 01 - Comando do cmd
 
@@ -18,5 +19,9 @@ Parte 01 - Comando do cmd
 
 ----------------------------------------------------
 Parte 02 -  Instalar o sqlalchemy
+
+
+
+
 
 
