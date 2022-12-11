@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <title>
+            Exercicio HTML
+        </title>
+        <style>
+            #myForm {
+                background-color: cornflowerblue;
+                color: darkblue;
+                border-style: solid;
+                border-width: 2px;               
+            }
+              
+            #Pessoais{
+                    background-color:rgb(92, 176, 224);
+                }
+            #Opcionais{
+                    background-color:rgb(120, 216, 223);
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2> Exemplo Formulario </h2>
+        
+        <h3><b> Entre com os dados: </b></h3>
+        <div id = myForm >  
+            <form action="" id = "Formulario" method="post" autocomplete="on">
+                
+            <legend>
+                <p><b>Dados Pessoais</b></p>
+            </legend>
+            <fieldset id="Pessoais">
+                <label for="firstName"> Nome:</label>
+                <input type="text" id = "firstName" placeholder = "Primeiro Nome"> 
+                <br/>
+                <label for ="lastName "> Sobrenome: </label>
+                <input tyoe ="text" id= "lastName" placeholder="Sobrenome"> 
+                <br/>
+                <hr>
+                <h4>Sexo:</h4>
+                <input type="radio" id="male" name="Gender" value="Male"> 
+                <label> Masculino </label>
+                <input type="radio" id="female" name="Gender" value="Female"> 
+                <label> Feminino </label>
+                <input type="radio" id="undefined" name="Gender" value="Undefined" checked> 
+                <label> Indefinido </label>
+
+                <br/>
+                <h4>País:</h4>
+                <input type="radio" id = "br" name = "countries" value="Brasil" checked>
+                <label for="br"> Brasil</label>
+                <br/>
+                <input type="radio" id = "br" name = "countries" value="EUA">
+                <label for="br"> EUA</label>
+                <br/>
+                <input type="radio" id = "br" name = "countries" value="Others">
+                <label for="br"> Outros</label>
+                <br/>
+
+            </fieldset>
+
+            <fieldset id="Opcionais">
+                <h4> Hobbies   </h4>
+                <input type="checkbox" id = "comedy" name="preferences" value="Comedy">
+                <label for="comedy"> Cinema </label>
+                <input type="checkbox" id = "reserarch" name="preferences" value="Reserarch">
+                <label for="reserarch" > Comer </label>
+                <input type="checkbox" id = "coding" name="preferences" value="Coding">
+                <label for="coding"> Terror/Programar </label>
+                <input type="checkbox" id = "soapopera" name="preferences" value="soapOpera">
+                <label for="soapopera"> Dormir </label>
+
+                <h4> Estado civil </h4>
+                <label for = "estadocivil"> Estado Civil </label>
+                <select name = "estados" id = "estadocivil">
+                    <option value="Solteiro" selected >Solteiro </option>
+                    <option value="Casado">Casado </option>                    
+                    <option value="Divorciado">Divorciado </option>
+                    <option value="Uniaoestavel">União Estável </option>
+                    <option value="outros" selected >Outros </option>
+                </select>
+
+                <h4> Biografia </h4>
+                <label for="biografia">Fale um pouco sobre vc:</label>
+                <br/>
+                <textarea name="biografia" id="biografia" rows="10" cols="30"></textarea>
+
+                <hr>
+                <h3>Escolaridade</h3>
+                <input type="text" list="escolaridade" name="escolaridade" >
+                <datalist id="escolaridade">
+                    <option value="Fundamental"></option>
+                    <option value="Medio"></option>
+                    <option value="Superior Incompleto"></option>
+                    <option value="Superior Completo"></option>
+                </datalist>
+
+                <hr>
+
+               
+            </fieldset>
+                
+                <button type="button" onclick="alert('Botao Clicado!')"> Aperte aqui! </button>
+             </form>
+        </div>
+       
+    </body>

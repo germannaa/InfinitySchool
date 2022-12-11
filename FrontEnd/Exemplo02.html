@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <title>
+            Exercicio HTML
+        </title>
+
+        <style>
+            h2{
+                text-align: center;
+                border-style: double;
+                border-color: crimson;
+                border-width: 6px;
+                background-color: rgb(215, 240, 72);
+                font-family: Georgia;
+                padding: 5px;
+                
+            }
+
+            table, th, tr, td{
+                border-style: solid;
+                border-collapse: collapse;
+                text-align: center;
+                border-color: indigo;
+                border-width: 2px;
+            }
+                    
+
+            th:nth-child(even), td:nth-child(even){
+                background-color: rgb(215, 240, 72);
+            }
+            th:nth-child(odd), td:nth-child(odd){
+                background-color: seagreen;
+            }
+            
+        </style>
+        
+    </head>
+
+    <body style="background-color: rgb(177, 202, 248);">
+        <h2><b> ~ Praticando HTML ~ </b></h2>
+
+        <h3> Exemplo de Tabela 01 </h3>
+        <table>
+            <!---Linha 01-->
+            <tr>
+                <th> <b>   ID   </b></th>
+                <th><b>   Nome   </b></th>
+                <th><b>   Curso   </b></th>
+                <th><b>   Nota   </b></th>
+            </tr>
+            <!---Linha 02-->
+            <tr>
+                <td> 1  </td>
+                <td> Germanna </td>
+                <td> FullStack </td>
+                <td> 10 </td>
+            </tr>
+            <!---Linha 03-->
+            <tr>
+                <td> 2</td>
+                <td> Fulano </td>
+                <td> FullStack </td>
+                <td> 10 </td>
+            </tr>
+            <!---Linha 04-->
+            <tr>
+                <td> 3</td>
+                <td> Ciclano </td>
+                <td> FullStack </td>
+                <td> 10 </td>
+            </tr>
+        </table>
+
+        <br>
+        <table>
+            <!--Cabeçalho da Tabela-->
+            <caption><b> Tabela 02 </b></caption>
+            <thead>
+               <tr>
+                   <th><b> ID </b></th>
+                   <th><b> Nome  </b></th>
+                   <th><b> Nota </b></th>
+               </tr>
+            </thead>
+            <!--Corpo da Tabela-->
+            <tbody>
+               <tr>
+                   <td> 1  </td>
+                   <td> Germanna </td>
+                   <td> 10.0 </td>
+               </tr>
+               <tr>
+                   <td> 2</td>
+                   <td> Fulano </td>
+                   <td> 5.0 </td>
+               </tr>
+               <tr>
+                <td> 3</td>
+                <td> Beltrano </td>
+                <td> 8.0 </td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <!--Rodapé da Tabela-->
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3> Exemplo de Tabela 03 </h3>
+        <table>
+            <!---Linha 01-->
+            <tr>
+                <th> <b>   ID   </b></th>
+                <th><b>   Nome   </b></th>
+                <th><b>   Curso   </b></th>
+            </tr>
+            <!---Linha 02-->
+            <tr>
+                <td> 1  </td>
+                <td> Germanna </td>
+                <td> FullStack </td>
+            </tr>
+            <!---Linha 03-->
+            <tr>
+                <td> 2</td>
+                <td> Fulano </td>
+                <td> FullStack </td>
+            </tr>
+            <!---Linha 04-->
+            <tr>
+                <td> 3</td>
+                <td> Ciclano </td>
+                <td> FullStack </td>
+            </tr>
+        </table>
+    </body>
+</html>
