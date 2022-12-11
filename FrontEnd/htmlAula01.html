@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Aula 01</title>
+</head>
+
+<body>
+    <fieldset style="background-color:azure; border-color: blue;">
+        <legend style="color: blue">
+            Cadastro
+        </legend>
+
+        <form action="" >
+            <label >Matricula: </label><br>
+            <input type="number" name="Matricula" placeholder="Digite sua matricula"> <br><br>
+
+            <label>Nome: </label><br>
+            <input type="text" name="Nome" placeholder="Digite seu nome"> <br><br>
+
+            <label> E-mail: </label><br>
+            <input type="email" name="Email" placeholder="Digite seu e-mail"> <br><br>
+
+            <label> Senha: </label><br>
+            <input type="password" name="Senha" placeholder="Digite a senha"><br><br>
+
+            <label> Curso: </label>
+            <select name="Curso">
+                <option value="python">Python </option>
+                <option value="flask">Flask </option>
+                <option value="react">React </option>
+                <option value="nodeJS">Node JS</option>
+                <option value="..." selected></option>
+            </select><br><br>
+
+            <label> Sexo: </label><br>
+            <input type="radio" name="sexo" value="masc"> Masculino
+            <input type="radio" name="sexo" value="fem"> Feminino
+            <input type="radio" name="sexo" value="outros" checked> Outros
+            <br><br>
+
+            <label>Disponibilidade: </label> <br>
+            <input type="checkbox" name="disp" value="manha"> Manhã
+            <input type="checkbox" name="disp" value="tarde"> Tarde
+            <input type="checkbox" name="disp" value="noite"> Noite
+            <br><br>
+
+            <label> Data de Nascimento: </label> <br>
+            <input type="date" name="dataNascimento">
+            <br><br>
+            
+           
+            <input type="submit" name="enviar">
+            <button onclick=""> Sair </button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
