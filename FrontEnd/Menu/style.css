@@ -1,0 +1,43 @@
+*{
+    
+    box-sizing: border-box;  
+}
+
+
+#menu-horizontal{
+    list-style: none;
+    padding: 0;
+    background-color: #4169E1	;
+}
+
+#menu-horizontal li {
+    display: inline;
+}
+
+#menu-horizontal li a{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    transition: background 0.6s;
+}
+
+#menu-horizontal li a:hover{
+background-color: #87CEFA;
+}
+
+#entrar{
+    background-color: palevioletred;
+    color: black;
+    padding: 20px;
+    justify-content: right;
+}
+
+
+#sobre{
+    background-color: #D8BFD8;
+}
+
+#pag{
+    background-color: #D3D3D3;
+}
