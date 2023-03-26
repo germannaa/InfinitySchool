@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            background: black;
+        }
+        .buttonn{
+            background-color: darkcyan;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+        .buttonn2{
+            background-color: rgb(170, 177, 238);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+        .buttonn3{
+            background-color: rgb(0, 139, 30);
+            color: whitesmoke;
+            font-size: 25px;
+        }
+    </style>
+
+    <title>Aula: EVENTOS</title>
+</head>
+<body>
+    
+<div>
+    <button id="btn" class="buttonn">Aperte aqui!</button>
+
+    <button id="bem-vindo" class="buttonn2">Clique aqui para ser bem vindo</button>
+
+    <button id="idade" class="buttonn3">Clique aqui para saber sua idade até o final do ano.</button>
+
+</div>
+
+<script>
+    let btn = document.querySelector("#btn");
+    function msg(){
+        console.log("Clicou no botão :)")
+    }
+    btn.addEventListener("click",msg)
+
+
+    let bemvindo = document.querySelector("#bem-vindo");
+    bemvindo.addEventListener("click", function(){
+        let nome = prompt("Digite seu nome");
+        alert(`Seja bem vindoo(a) ${nome}!`)
+    })
+
+
+    let idade = document.querySelector("#idade");
+    idade.addEventListener("click", function(){
+        let ano = Number(prompt("Digite ano que vc nasceu (Formato: AAAA)"));
+        idadeem2023 = 2023 - ano;
+        alert(`Parabéns! Vc vai ter ${idadeem2023} anos no final do ano \o/`)
+    })
+
+
+    //site pointerpointer
+
+
+</script>
+
+</body>
+</html>
