@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background: black;
+        }
+
+        .myClock{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: blueviolet;
+            font-size: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 7px;
+
+        }
+
+    </style>
+    <title>Projeto Relógio</title>
+</head>
+
+<body>
+    <div id="clock" class="myClock">
+    </div>
+
+    <script>
+        function mostrarHora() {
+            let date = new Date()
+            let h = date.getHours()
+            let m = date.getMinutes()
+            let s = date.getSeconds()
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            let time = `${h}:${m}:${s}`
+            document.getElementById("clock").innerText = time
+            setTimeout(mostrarHora, 1000)
+        }
+
+        mostrarHora()
+    </script>
+</body>
+
+</html>
